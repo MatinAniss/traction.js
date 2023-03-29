@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Progress bar for Sveltekit",
   "scripts": {
-    "build": "vite build && npm run package",
+    "build": "vite build",
     "lint": "eslint ."
   },
   "exports": {
