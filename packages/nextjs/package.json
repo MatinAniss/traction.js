@@ -1,0 +1,27 @@
+{
+  "name": "@traction.js/nextjs",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs --dts",
+    "lint": "eslint *.ts*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.2",
+    "tsup": "^6.7.0"
+  },
+  "peerDependencies": {
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
