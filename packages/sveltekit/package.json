@@ -1,6 +1,7 @@
 {
   "name": "@traction.js/sveltekit",
   "version": "0.0.1",
+  "description": "Progress bar for Sveltekit",
   "scripts": {
     "build": "vite build && npm run package",
     "lint": "eslint ."
@@ -14,6 +15,14 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "sveltekit",
+    "svelte",
+    "progress",
+    "loading",
+    "traction"
+  ],
+  "repository": "https://github.com/matinaniss/traction.js.git",
   "peerDependencies": {
     "@sveltejs/kit": "^1.14.0",
     "svelte": "^3.54.0"

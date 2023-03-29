@@ -1,11 +1,19 @@
 {
   "name": "@traction.js/nextjs",
   "version": "0.0.2",
+  "description": "Progress bar for Next.js",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "keywords": [
+    "nextjs",
+    "progress",
+    "loading",
+    "traction"
+  ],
+  "repository": "https://github.com/matinaniss/traction.js.git",
   "scripts": {
     "build": "tsup src/index.ts --format cjs --dts",
     "lint": "eslint *.ts*"
