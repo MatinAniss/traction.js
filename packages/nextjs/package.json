@@ -1,8 +1,11 @@
 {
   "name": "@traction.js/nextjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs --dts",
     "lint": "eslint *.ts*"
