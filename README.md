@@ -44,7 +44,7 @@ const MyApp: AppType = ({ Component, pageProps: { ...pageProps } }) => {
 export default MyApp;
 ```
 
-# Sveltekit
+# SvelteKit
 
 ## Install
 
