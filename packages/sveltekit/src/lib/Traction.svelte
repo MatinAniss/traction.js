@@ -3,9 +3,11 @@
   import { afterNavigate, beforeNavigate } from "$app/navigation";
 
   // Props and defaults
-  export let color = "#FF0000";
-  export let incrementInterval = 100;
-  export let incrementAmount = 10;
+  export let color: string = "#FF0000";
+  export let incrementInterval: number = 100;
+  export let incrementAmount: number = 10;
+  export let transitionDuration: number = 500;
+  export let transitionTimingFunction: "ease" | "linear" | "ease-in" | "ease-out" | "ease-in-out" = "ease";
 
   // Declare states
   let isVisible = false;
@@ -34,4 +36,4 @@
   });
 </script>
 
-<div style={`position: fixed; top: 0; left: 0; width: ${progress}%; height: 2px; background-color: ${color}; transition: width 0.5s ease; opacity: ${isVisible ? 1 : 0};`} />
+<div style={`position: fixed; top: 0; left: 0; width: ${progress}%; height: 2px; background-color: ${color}; transition: width ${transitionDuration}ms ${transitionTimingFunction}; opacity: ${isVisible ? 1 : 0};`} />

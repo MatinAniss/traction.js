@@ -8,6 +8,8 @@ interface TractionProps {
   color: string;
   incrementInterval: number;
   incrementAmount: number;
+  transitionDuration: number;
+  transitionTimingFunction: "ease" | "linear" | "ease-in" | "ease-out" | "ease-in-out";
 }
 
 const Traction = (props: TractionProps) => {
@@ -24,7 +26,7 @@ const Traction = (props: TractionProps) => {
     width: `${progress}%`,
     height: "2px",
     backgroundColor: props.color,
-    transition: "width 0.5s ease",
+    transition: `width ${props.transitionDuration}ms ${props.transitionTimingFunction}`,
     opacity: isVisible ? 1 : 0
   } as React.CSSProperties;
 
@@ -48,7 +50,7 @@ const Traction = (props: TractionProps) => {
       setTimeout(() => {
         setIsVisible(false);
         setProgress(0);
-      }, 500);
+      }, props.transitionDuration);
     };
 
     // Route change error function
@@ -58,7 +60,7 @@ const Traction = (props: TractionProps) => {
       setTimeout(() => {
         setIsVisible(false);
         setProgress(0);
-      }, 500);
+      }, props.transitionDuration);
     };
 
     // Router event listeners
@@ -82,7 +84,9 @@ const Traction = (props: TractionProps) => {
 Traction.defaultProps = {
   color: "#FF0000",
   incrementInterval: 100,
-  incrementAmount: 10
+  incrementAmount: 10,
+  transitionDuration: 500,
+  transitionTimingFunction: "ease"
 };
 
 export default Traction;
