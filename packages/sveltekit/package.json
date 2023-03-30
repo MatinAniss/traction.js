@@ -1,9 +1,9 @@
 {
   "name": "@traction.js/sveltekit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Progress bar for Sveltekit",
   "scripts": {
-    "build": "vite build",
+    "build": "svelte-package",
     "lint": "eslint ."
   },
   "exports": {
