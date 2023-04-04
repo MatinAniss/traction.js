@@ -1,6 +1,7 @@
 {
   "name": "@traction.js/sveltekit",
-  "version": "0.0.6",
+  "version": "0.0.7",
+  "license": "MIT",
   "description": "Progress bar for Sveltekit",
   "scripts": {
     "postinstall": "svelte-kit sync",
